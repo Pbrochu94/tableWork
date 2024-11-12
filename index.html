@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col>
+            <col span="9">
+        </colgroup>
+        <caption>Planets</caption>
+        <thead>
+            <tr>
+                <td colspan="2"></td>
+                <th>Name</th>
+                <th>Mass (1024kg)</th>
+                <th>Diameter (km)</th>
+                <th>Density (kg/m3)</th>
+                <th>Gravity (m/s2)</th>
+                <th>Length of day (hours)</th>
+                <th>Distance from Sun (106km)</th>
+                <th>Mean temperature (°C)</th>
+                <th>Number of moons	</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2">Terrestrial planets	</th>
+                <th>Mercury</th>
+                <td>0.330	</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6	</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td colspan="2">Closest to the Sun</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+
+  </body>
 </html>
